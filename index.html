@@ -116,4 +116,170 @@ footer{text-align:center;font-size:13px;opacity:.7;padding:30px 16px 10px}
 <g transform="translate(26 38)"><g class="cloud"><path d="M0 22a11 11 0 0 1 9-11a15 15 0 0 1 28-3a12 12 0 0 1 17 10a9 9 0 0 1 0 4z" fill="#fff"/></g></g>
 <g transform="translate(196 74)"><g class="cloud b"><path d="M0 18a9 9 0 0 1 7-9a12 12 0 0 1 22-2a10 10 0 0 1 14 8a7 7 0 0 1 0 3z" fill="#fff"/></g></g>
 <g transform="translate(60 14)"><g class="plane"><path d="M0 10Q18 0 40 8L52 8L40 14Q18 20 0 10z" fill="#fff"/><path d="M18 9L10 -2L24 7z" fill="#F2A497"/><path d="M20 13L12 24L27 15z" fill="#F2A497"/></g></g>
-<path d="M2 170L60 110L110 150L170 96L240 160L300 122L358 164V192H2z" f
+<path d="M2 170L60 110L110 150L170 96L240 160L300 122L358 164V192H2z" fill="#B9DAA5"/>
+<path d="M66 124L70 72L74 124z" fill="#fff"/><ellipse cx="70" cy="90" rx="11" ry="5" fill="#F6D27A"/><path d="M70 72V54"/>
+<g><rect x="264" y="160" width="44" height="32" fill="#F2A497"/><path d="M286 160v32M264 176h44" fill="none"/><path d="M246 162Q268 160 272 148H300Q304 160 326 162Q310 170 286 170Q262 170 246 162z" fill="#F6D27A"/><path d="M262 148Q276 146 280 136H292Q296 146 310 148z" fill="#F6D27A"/></g>
+<path d="M2 192H358" fill="none"/>
+<g transform="translate(44 168)"><g class="train"><rect width="76" height="24" rx="11" fill="#A8D3E6"/><path d="M62 0q14 2 14 14v10H62z" fill="#F6D27A"/><rect x="10" y="5" width="12" height="9" rx="3" fill="#fff"/><rect x="28" y="5" width="12" height="9" rx="3" fill="#fff"/><rect x="46" y="5" width="12" height="9" rx="3" fill="#fff"/><circle cx="16" cy="26" r="5" fill="#fff"/><circle cx="58" cy="26" r="5" fill="#fff"/></g></g>
+<rect x="2" y="200" width="356" height="30" rx="10" fill="#A8D3E6"/>
+<g fill="none"><path class="wave" d="M-20 212q12-8 24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0"/><path class="wave b" d="M-20 222q12-8 24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0t24 0" stroke-width="2"/></g>
+<g transform="translate(200 186)"><g class="boat"><path d="M0 14h36l-6 10H6z" fill="#F2A497"/><path d="M18 14V-8L32 12z" fill="#fff"/></g></g>
+</svg>
+<span class="ko">우리 여행</span>
+<h1>首爾・釜山<br>6 天 5 夜</h1>
+<p class="sub">2026/11/5（四）– 11/10（二）</p>
+<div class="chips"><span class="chip">韓國街頭小吃</span><span class="chip">電競公仔小物</span><span class="chip">釜山海景</span></div>
+<div class="card">
+<p class="cdmsg" id="cdmsg">距離出發還有</p>
+<div class="cd" id="cd"><div><b id="cd-d">0</b><span>天</span></div><div><b id="cd-h">0</b><span>時</span></div><div><b id="cd-m">0</b><span>分</span></div><div><b id="cd-s">0</b><span>秒</span></div></div>
+</div>
+</header>
+
+<section id="flight">
+<h2><span class="ic" style="background:var(--blue)"><svg viewBox="0 0 26 26" fill="#fff" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round"><path d="M2 14L24 4L16 22L12 15z"/></svg></span>航班</h2>
+<div class="fl" id="fl"></div>
+</section>
+
+<section id="plan">
+<h2><span class="ic" style="background:var(--coral)"><svg viewBox="0 0 26 26" fill="#fff" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round"><path d="M4 5h18v17H4zM4 10h18M9 3v4M17 3v4"/></svg></span>每日行程</h2>
+<div class="days" id="days" role="tablist" aria-label="選擇日期"></div>
+<div id="dview" role="tabpanel"></div>
+</section>
+
+<section id="todo">
+<h2><span class="ic" style="background:var(--green)"><svg viewBox="0 0 26 26" fill="none" stroke="#3E3A39" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l5 5L21 7"/></svg></span>待辦清單<span class="cnt" id="c-todo"></span></h2>
+<div class="card"><ul class="ck" id="l-todo"></ul></div>
+</section>
+
+<section id="stay">
+<h2><span class="ic" style="background:var(--yellow)"><svg viewBox="0 0 26 26" fill="#fff" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round"><path d="M3 21V8M3 16h20v5M3 16V12h9a4 4 0 0 1 4 4"/></svg></span>住宿資訊</h2>
+<div class="stay" id="staybox"></div>
+</section>
+
+<section id="pack">
+<h2><span class="ic" style="background:var(--blue)"><svg viewBox="0 0 26 26" fill="#fff" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round"><rect x="4" y="8" width="18" height="14" rx="3"/><path d="M9 8V5h8v3"/></svg></span>打包清單<span class="cnt" id="c-pack"></span></h2>
+<div class="card" id="packbox"></div>
+</section>
+
+<section id="shop">
+<h2><span class="ic" style="background:var(--coral)"><svg viewBox="0 0 26 26" fill="#fff" stroke="#3E3A39" stroke-width="2.2" stroke-linejoin="round"><path d="M3 5h4l3 12h11l2-8H8"/><circle cx="11" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/></svg></span>購買清單<span class="cnt" id="c-shop"></span></h2>
+<div class="card" id="shopbox"></div>
+</section>
+
+<footer>잘 다녀오세요！祝旅途平安 ♡</footer>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+const ls={g(k){try{return localStorage.getItem(k)}catch(e){return null}},s(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const TG={air:"b",rail:"y",bus:"g",walk:"w",food:"c",spot:"g",stay:"y"};
+
+/* 航班 */
+const FL=[
+{d:"11/5（四）去程",no:"KE2026",a:"桃園 T1",at:"12:25",ac:"TPE",b:"仁川 T2",bt:"15:50",bc:"ICN",m:[["航空","大韓航空 Korean Air"],["機型","A330-300"],["艙等","Economy Saver"],["訂位代號","F85CYT"],["行李","託運 1 件 23kg"],["手提","含隨身合計 10kg"]],n:"出發前接送：09:15 DP8594"},
+{d:"11/10（二）回程",no:"KE2085",a:"釜山金海 T1",at:"14:50",ac:"PUS",b:"桃園 T1",bt:"16:30",bc:"TPE",m:[["航空","大韓航空 Korean Air"],["機型","B737-900ER"],["艙等","Economy Saver"],["訂位代號","F85CYT"],["行李","託運 1 件 23kg"],["手提","含隨身合計 10kg"]],n:"抵達後接送：16:30 DP8627"}];
+$("#fl").innerHTML=FL.map(f=>`<article class="card"><div class="top"><span class="pill">${f.d}</span><b style="font-weight:400">${f.no}</b></div>
+<div class="route"><div class="pt"><b>${f.at}</b><small>${f.ac}・${f.a}</small></div><div class="mid"><svg viewBox="0 0 34 28" fill="#F2A497" stroke="#3E3A39" stroke-width="2.4" stroke-linejoin="round"><path d="M3 15L31 4L22 24L16 16z"/></svg></div><div class="pt"><b>${f.bt}</b><small>${f.bc}・${f.b}</small></div></div>
+<div class="meta">${f.m.map(x=>`<div><span>${x[0]}</span>${x[1]}</div>`).join("")}</div><p style="font-size:13px;margin-top:10px;opacity:.75">${f.n}</p></article>`).join("");
+
+/* 每日行程：[時間, 標題, 標籤, 備註, 必去] */
+const D=[
+{d:"11/5",w:"四",k:"목요일",t:"移動日＋弘大商圈",i:[
+["12:25","搭機飛首爾","air:飛機","大韓航空 KE2026，桃園 T1 → 仁川 T2，15:50 抵達"],
+["入境後","AREX 到弘大","rail:機場快線","約 1.5 小時（含入境時間）"],
+["18:30","弘大入住","stay:住宿","Bunk Backpackers Guesthouse，15:00–21:00 可 check-in"],
+["19:00–21:00","弘大商圈","spot:景點","T1 Base Camp（首爾）、AK PLAZA（11:00–22:00）、JS 商店（12:00–21:00）",1],
+["晚餐","弘大晚餐三選一","food:美食","BBQ 炸雞／大方排骨／獵奇辣炒年糕弘大分店"]]},
+{d:"11/6",w:"五",k:"금요일",t:"首爾東側",i:[
+["早餐","旅館附近早餐","food:美食",""],
+["09:30–10:40","公車前往東大門站・興仁之門","bus:公車","約 20–35 分鐘"],
+["順遊","昌信洞玩具一條街","spot:景點","08:00–19:00，週六日公休"],
+["10:40–11:50","東大門逛街","spot:景點","東大門綜合市場（07:30–19:00，週日公休）、現代 City Outlet（10:30–21:30）、平和市場"],
+["11:50–13:10","午餐：辣炒年糕＋廣藏市場","food:美食","獵奇辣炒年糕東大門本店、廣藏市場小吃"],
+["15:15–18:30","明洞","spot:景點","明洞新世界免稅店，10:30–20:00（六日到 20:30）",1],
+["18:30–19:30","晚餐","food:美食",""]]},
+{d:"11/7",w:"六",k:"토요일",t:"龍山半日遊＋市場美食",i:[
+["早餐","旅館附近早餐","food:美食",""],
+["10:30–12:30","前往龍山站・I’PARK Mall","rail:地鐵","10:30–21:00",1],
+["12:30–13:30","午餐","food:美食",""],
+["13:30–14:00","前往國立中央博物館","walk:步行",""],
+["14:00–16:00","國立中央博物館","spot:景點","09:30–17:30，週三與週六開到 21:00"],
+["16:00 出發","望遠市場晚餐","food:美食","17:00–18:00 停留；必吃炸雞丁、辣椒煎餅（10:00–21:00）",1]]},
+{d:"11/8",w:"日",k:"일요일",t:"古宮文化＋移動日",i:[
+["早餐","旅館附近早餐","food:美食",""],
+["08:00–09:15","弘大退房","stay:住宿","Bunk Backpackers Guesthouse，11:00 前退房"],
+["09:15–09:45","前往景福宮","rail:地鐵",""],
+["09:45–11:30","景福宮","spot:景點","09:00–17:00，週二公休；門票 KRW 3,000"],
+["11:45–13:00","午餐：土俗村蔘雞湯","food:美食",""],
+["13:00–13:40","返回首爾站","rail:地鐵",""],
+["15:45–18:03","KTX 到釜山","rail:KTX","Cheongryong 9151"],
+["19:00–19:30","海雲台入住","stay:住宿","釜山海雲台 2 東橫 INN，15:00 起可入住"],
+["20:30","晚餐＋T1 Base Camp（釜山）","food:美食","味贊王烤肉／Puradak 炸雞／60 雞三選一；T1 Base Camp 全天開放",1]]},
+{d:"11/9",w:"一",k:"월요일",t:"海雲台多重海景",i:[
+["早餐","旅館附近早餐","food:美食",""],
+["10:00–12:30","步行至海雲台海灘・SEA LIFE","walk:步行","SEA LIFE Busan Aquarium，10:00–19:00（六日到 20:00），門票 KRW 32,000"],
+["13:00–14:30","海雲台商圈午餐","food:美食","31cm 海鮮刀削麵／密陽血腸豬肉湯飯，順逛海雲台傳統市場（09:00–22:00）"],
+["14:30–16:00","海岸散步","walk:步行","冬柏島海岸步道、APEC 世峰樓（09:00–17:00）"],
+["17:00–18:30","The Bay 101 夜景","spot:景點","08:00–23:00，可到 The Bay 101: Fingers & Chat 用餐",1]]},
+{d:"11/10",w:"二",k:"화요일",t:"最後補貨・回家",i:[
+["08:30–09:00","海雲台退房","stay:住宿","10:00 前退房"],
+["09:00–09:50","前往西面＋寄放行李","rail:地鐵",""],
+["09:50–10:30","早午餐：Egg Drop","food:美食",""],
+["10:30–11:15","西面商圈","spot:景點","樂天百貨釜山本店（10:30 開門）"],
+["11:15–11:30","取行李＋搭輕軌","rail:輕軌",""],
+["11:30–12:30","前往金海機場","rail:輕軌",""],
+["14:50","搭機回桃園","air:飛機","大韓航空 KE2085，16:30 抵達桃園 T1"]]}];
+
+$("#days").innerHTML=D.map((x,n)=>`<button class="day" role="tab" aria-selected="${n==0}" data-n="${n}"><b>${x.d}</b><small>${x.w}・Day ${n+1}</small></button>`).join("");
+function show(n,anim){
+ const x=D[n];
+ document.querySelectorAll(".day").forEach((b,i)=>b.setAttribute("aria-selected",i==n));
+ $("#dview").innerHTML=`<div class="dtitle">${x.t}<small>${x.k}</small></div><ol class="tl ${anim?"pop":""}">`+x.i.map(r=>{
+  const tags=r[2].split(",").map(t=>{const [k,l]=t.split(":");return `<span class="tag ${TG[k]}">${l}</span>`}).join("");
+  return `<li class="${r[4]?"must":""}"><div class="card"><div class="t">${r[0]}</div><h3>${r[1]}${r[4]?'<span class="must-b">必去</span>':""}</h3><div class="tags">${tags}</div>${r[3]?`<p>${r[3]}</p>`:""}</div></li>`}).join("")+"</ol>";
+}
+$("#days").addEventListener("click",e=>{const b=e.target.closest(".day");if(b){show(+b.dataset.n,true);b.scrollIntoView({inline:"center",block:"nearest"})}});
+show(0,false);
+
+/* 住宿 */
+const ST=[
+{n:"Bunk Backpackers Guesthouse",c:"首爾・弘大",r:[["入住","11/5（四）– 11/8（日），3 晚"],["Check-in","15:00–21:00"],["Check-out","11:00 前"],["訂房確認碼","6175337025"],["地址","11-1, Wausan-ro 29da-gil, Mapo-gu, Seoul"]],u:"https://naver.me/GDaHIh0q"},
+{n:"釜山海雲台 2 東橫 INN",c:"釜山・海雲台",r:[["入住","11/8（日）– 11/10（二），2 晚"],["Check-in","15:00 起"],["Check-out","10:00 前"],["地址","5, Haeundaehaebyeon-ro 237beon-gil, Haeundae-gu, Busan"]],u:"https://maps.app.goo.gl/ketd9s5Mpxh2nzKx7"}];
+$("#staybox").innerHTML=ST.map(s=>`<article class="card"><span class="pill">${s.c}</span><h3 style="margin-top:8px">${s.n}</h3>${s.r.map(r=>`<div class="row"><span>${r[0]}　</span>${r[1]}</div>`).join("")}<a class="btn" href="${s.u}" target="_blank" rel="noopener">開啟地圖</a></article>`).join("");
+
+/* 可打勾清單 */
+function checklist(id,items,box,cnt){
+ const el=box||$("#l-"+id);
+ el.innerHTML=items.map((it,n)=>{const [t,s]=[].concat(it);const k=`kr:${id}:${n}`;
+  return `<li><label><input type="checkbox" data-k="${k}" ${ls.g(k)=="1"?"checked":""}><span class="bx"></span><span class="tx">${t}${s?`<small>${s}</small>`:""}</span></label></li>`}).join("");
+}
+function count(id,total){
+ const c=[...document.querySelectorAll(`[data-k^="kr:${id}"]`)].filter(i=>i.checked).length;
+ $("#c-"+id).textContent=`${c} / ${total}`;
+}
+const TODO=[["訂機票"],["訂住宿"],["規劃行程"],["預約餐廳與景點"],["預約租車"],["購買 eSIM"],["打包衣服"]];
+[0,1,2,3,4].forEach(n=>ls.g("kr:todo:"+n)===null&&ls.s("kr:todo:"+n,"1"));
+checklist("todo",TODO);
+const SHOP={"超商":["CU mochi roll cake","CU 杜拜巧克力","SUN 餅乾","To Go 優格","YOZM 優格（藍莓果醬／蘋果肉桂）"],"超市":["Bbibigo 海苔餅乾","NeRds 福壽螺軟糖","ZERO 巧克力派"],"飲料":["Compose 荔枝海鹽","Mammoth 草莓拿鐵","白種元 甜米釀"],"Olive Young":["FIXX 粉罐","Innisfree 蜜粉","年糕洗面"],"Daiso":["PDRN","PURE 棉棉","好寫三色筆","海葡萄棉片","蘋果奶茶"],"藥局":["Dr. Reju-ALL","痠痛乳液"]};let stotal=0;
+$("#shopbox").innerHTML=Object.entries(SHOP).map(([g,a],gi)=>{stotal+=a.length;return `<div><span class="gh ${["c","y","b","g"][gi%4]}">${g}</span><ul class="ck">${a.map((t,n)=>{const k=`kr:shop:${gi}-${n}`;return `<li><label><input type="checkbox" data-k="${k}" ${ls.g(k)=="1"?"checked":""}><span class="bx"></span><span class="tx">${t}</span></label></li>`}).join("")}</ul></div>`}).join("");
+
+const PACK={"證件與錢":["護照","身分證","信用卡","現金","交通卡（IC card）","SIM 卡 / eSIM"],"3C 用品":["手機充電器","充電線","行動電源","轉接頭","相機"],"衣物":["外套","毛衣","套頭衫","襯衫","長褲","內衣褲","襪子","睡衣","帽子"],"盥洗保養":["牙刷","牙膏","洗髮精","肥皂","體香劑","梳子","髮圈","指甲剪","護唇膏","防曬乳","保養品","化妝品"],"藥品":["感冒藥","腸胃藥","眼藥水","急救包","防蚊液"],"其他":["口罩","衛生紙","鑰匙","筆（填入境卡）","行李秤","洗衣袋"]};
+const gc=["c","y","b","g"];let pn=0,ptotal=0;
+$("#packbox").innerHTML=Object.entries(PACK).map(([g,a],gi)=>{ptotal+=a.length;return `<div><span class="gh ${gc[gi%4]}">${g}</span><ul class="ck" data-g="${gi}"></ul></div>`}).join("");
+Object.values(PACK).forEach((a,gi)=>{const ul=document.querySelector(`[data-g="${gi}"]`);ul.innerHTML=a.map((t,n)=>{const k=`kr:pack:${gi}-${n}`;return `<li><label><input type="checkbox" data-k="${k}" ${ls.g(k)=="1"?"checked":""}><span class="bx"></span><span class="tx">${t}</span></label></li>`}).join("")});
+const upd=()=>{count("todo",TODO.length);count("shop",stotal);count("pack",ptotal)};
+document.addEventListener("change",e=>{const k=e.target.dataset&&e.target.dataset.k;if(k){ls.s(k,e.target.checked?"1":"0");upd()}});
+upd();
+
+/* 倒數 */
+const T0=new Date("2026-11-05T12:25:00+08:00"),T1=new Date("2026-11-10T16:30:00+08:00");
+function tick(){
+ const now=new Date(),df=T0-now;
+ if(df<=0){$("#cdmsg").textContent=now<T1?"旅程進行中，玩得開心！":"旅程結束，歡迎回家！";$("#cd").style.display="none";return}
+ const s=Math.floor(df/1000);
+ $("#cd-d").textContent=Math.floor(s/86400);$("#cd-h").textContent=Math.floor(s%86400/3600);$("#cd-m").textContent=Math.floor(s%3600/60);$("#cd-s").textContent=s%60;
+}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
