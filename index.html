@@ -97,6 +97,18 @@ h2 .ic svg{width:22px;height:22px}
 .btn:active{transform:translate(2px,2px);box-shadow:none}
 footer{text-align:center;font-size:13px;opacity:.75;padding:30px 16px 10px}
 @keyframes pop{0%{transform:translateY(14px) scale(.92);opacity:.4}60%{transform:translateY(-4px) scale(1.02);opacity:1}100%{transform:none}}
+.locs{display:grid;gap:6px;margin-top:10px}
+.loc{display:flex;align-items:center;gap:8px;text-decoration:none;border:var(--line);border-radius:12px;padding:6px 10px;background:var(--green);box-shadow:inset 0 3px 0 rgba(255,255,255,.7);min-height:44px}
+.loc.r{background:var(--lilac)}.loc.s{background:var(--yellow)}
+.loc span{flex:1;line-height:1.3;font-size:14px}.loc small{display:block;font-size:12px;opacity:.75}
+.loc::after{content:"地圖 ↗";flex:none;font-size:12px;border:var(--line);border-radius:999px;padding:0 8px;background:#fff}
+.loc:active{transform:translateY(2px)}
+.fc{padding:2px 14px;font-size:15px}
+.rl{display:grid;gap:12px}
+.rc{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 14px}
+.rc h3{font-size:17px;font-weight:400;line-height:1.35}
+.rm{font-size:13px;margin-top:4px;opacity:.8}
+.rc .btn{margin:0;flex:none}
 @keyframes drift{to{transform:translateX(26px)}}
 @keyframes wave{to{transform:translateX(-30px)}}
 @keyframes sway{to{transform:rotate(4deg)}}
@@ -118,7 +130,7 @@ footer{text-align:center;font-size:13px;opacity:.75;padding:30px 16px 10px}
 </head>
 <body>
 <nav aria-label="頁面選單">
-<a href="#top">首頁</a><a href="#flight">航班</a><a href="#plan">行程</a><a href="#todo">待辦</a><a href="#stay">住宿</a><a href="#pack">打包</a><a href="#shop">購買</a>
+<a href="#top">首頁</a><a href="#flight">航班</a><a href="#plan">行程</a><a href="#food">餐廳</a><a href="#todo">待辦</a><a href="#stay">住宿</a><a href="#pack">打包</a><a href="#shop">購買</a>
 </nav>
 <main id="top">
 
@@ -140,13 +152,13 @@ footer{text-align:center;font-size:13px;opacity:.75;padding:30px 16px 10px}
 <g transform="translate(44 142)"><path d="M0 0V-18" fill="none"/><path d="M-17 -18a17 14 0 0 1 34 0z" fill="#B4E5ED"/><path d="M-6 -18a6 13 0 0 1 12 0z" fill="#fff" stroke="none"/></g>
 <g transform="translate(318 142)"><path d="M0 0V-18" fill="none"/><path d="M-17 -18a17 14 0 0 1 34 0z" fill="#FBD5F7"/><path d="M-6 -18a6 13 0 0 1 12 0z" fill="#fff" stroke="none"/></g>
 <circle cx="196" cy="142" r="5.5" fill="#fff"/><path d="M191 141q5 4 10 0" fill="none" stroke="#B4E5ED"/>
-<rect x="2" y="154" width="356" height="82" rx="12" fill="#FBD5F7"/>
+<rect x="2" y="154" width="356" height="82" rx="12" fill="#B4E5ED"/><path d="M2 166Q32 158 62 166T122 166T182 166T242 166T302 166T358 164V182H2z" fill="#fff" stroke="none" opacity=".5"/><path d="M2 212Q32 204 62 212T122 212T182 212T242 212T302 212T358 210V224a12 12 0 0 1-12 12H14A12 12 0 0 1 2 224z" fill="#fff" stroke="none" opacity=".4"/><path d="M60 224h24M250 226h30M300 178h22" stroke="#FBD5F7" stroke-width="3" fill="none"/>
 <g fill="none" stroke-width="1.2"><path class="wave" d="M-20 170q10-7 20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0"/><path class="wave b" d="M-20 224q10-7 20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0"/></g>
 <rect x="36" y="186" width="288" height="22" rx="11" fill="#DFF7D1"/>
-<g transform="translate(326 224)"><g class="boat"><path d="M0 8h30l-5 8H5z" fill="#B4E5ED"/><path d="M15 8V-12L28 6z" fill="#fff"/></g></g>
+<g transform="translate(326 224)"><g class="boat"><path d="M0 8h30l-5 8H5z" fill="#F6F3AB"/><path d="M15 8V-12L28 6z" fill="#fff"/></g></g>
 <g transform="translate(110 190)">
 <rect x="-17" y="-36" width="14" height="36" rx="4" fill="#fff"/><rect x="3" y="-36" width="14" height="36" rx="4" fill="#fff"/>
-<rect x="-20" y="-8" width="19" height="8" rx="3" fill="#B4E5ED"/><rect x="1" y="-8" width="19" height="8" rx="3" fill="#B4E5ED"/>
+<rect x="-20" y="-8" width="19" height="8" rx="3" fill="#EDB4BE"/><rect x="1" y="-8" width="19" height="8" rx="3" fill="#EDB4BE"/>
 <rect x="-30" y="-68" width="10" height="30" rx="5" fill="#fff"/><circle cx="-25" cy="-36" r="5.5" fill="#F6F3AB"/>
 <rect x="-20" y="-72" width="40" height="38" rx="8" fill="#fff"/>
 <rect x="-17" y="-66" width="14" height="10" rx="2" fill="#F6F3AB"/><rect x="3" y="-66" width="14" height="10" rx="2" fill="#F6F3AB"/>
@@ -161,7 +173,7 @@ footer{text-align:center;font-size:13px;opacity:.75;padding:30px 16px 10px}
 <g transform="translate(235 190)"><g class="loopy">
 <circle cx="-33" cy="-12" r="10" fill="#FBD5F7"/><path d="M-39 -17l9 9M-34 -21l9 9" fill="none" stroke-width="1"/>
 <circle cx="0" cy="-20" r="20" fill="#FBD5F7"/>
-<circle cx="-11" cy="-2" r="6" fill="#B4E5ED"/><circle cx="11" cy="-2" r="6" fill="#B4E5ED"/>
+<circle cx="-11" cy="-2" r="6" fill="#EDB4BE"/><circle cx="11" cy="-2" r="6" fill="#EDB4BE"/>
 <circle cx="-21" cy="-26" r="6.5" fill="#FBD5F7"/><circle cx="21" cy="-26" r="6.5" fill="#FBD5F7"/>
 <g transform="translate(33 -28) rotate(-18)"><rect x="-2.5" y="-2" width="5" height="12" rx="2" fill="#fff"/><circle cx="-3" cy="12" r="3" fill="#fff"/><circle cx="3" cy="12" r="3" fill="#fff"/><circle cy="-11" r="11" fill="#F6F3AB"/><circle cx="-3" cy="-13" r="1.6" fill="#B4E5ED" stroke="none"/><circle cx="3" cy="-7" r="1.6" fill="#B4E5ED" stroke="none"/></g>
 <circle cx="-22" cy="-72" r="10" fill="#FBD5F7"/><circle cx="22" cy="-72" r="10" fill="#FBD5F7"/><circle cx="-22" cy="-72" r="4.5" fill="#fff" stroke="none"/><circle cx="22" cy="-72" r="4.5" fill="#fff" stroke="none"/>
@@ -192,6 +204,12 @@ footer{text-align:center;font-size:13px;opacity:.75;padding:30px 16px 10px}
 <h2><span class="ic" style="background:var(--sky)"><svg viewBox="0 0 26 26" fill="#fff" stroke="#3E3A39" stroke-width="1.6" stroke-linejoin="round"><path d="M4 5h18v17H4zM4 10h18M9 3v4M17 3v4"/></svg></span>每日行程</h2>
 <div class="days" id="days" role="tablist" aria-label="選擇日期"></div>
 <div id="dview" role="tabpanel"></div>
+</section>
+
+<section id="food">
+<h2><span class="ic" style="background:var(--yellow)"><svg viewBox="0 0 26 26" fill="#fff" stroke="#3E3A39" stroke-width="1.6" stroke-linejoin="round"><path d="M3 12h20a10 9 0 0 1-20 0z"/><path d="M8 8q-2-3 0-5M14 8q-2-3 0-5M20 8q-2-3 0-5" fill="none" stroke-linecap="round"/></svg></span>餐廳</h2>
+<div class="days" id="rf" role="tablist" aria-label="依區域篩選"></div>
+<div class="rl" id="rlist"></div>
 </section>
 
 <section id="todo">
@@ -235,48 +253,53 @@ const D=[
 {d:"11/5",w:"四",k:"목요일",t:"移動日＋弘大商圈",i:[
 ["12:25","搭機飛首爾","air:飛機","大韓航空 KE2026，桃園 T1 → 仁川 T2，15:50 抵達"],
 ["入境後","AREX 到弘大","rail:機場快線","約 1.5 小時（含入境時間）"],
-["18:30","弘大入住","stay:住宿","Bunk Backpackers Guesthouse，15:00–21:00 可 check-in"],
-["19:00–21:00","弘大商圈","spot:景點","T1 Base Camp（首爾）、AK PLAZA（11:00–22:00）、JS 商店（12:00–21:00）",1],
-["晚餐","弘大晚餐三選一","food:美食","BBQ 炸雞／大方排骨／獵奇辣炒年糕弘大分店"]]},
-{d:"11/6",w:"五",k:"금요일",t:"首爾東側",i:[
+["18:30","弘大入住","stay:住宿","15:00–21:00 可 check-in",0,["Bunk Backpackers Guesthouse"]],
+["19:00–21:00","弘大商圈","spot:景點","",1,["T1 Base Camp (Seoul)","AK PLAZA","JS商店"]],
+["晚餐","弘大晚餐三選一","food:美食","",0,["BBQ炸雞","大方排骨","獵奇辣炒年糕弘大分店"]]]},
+{d:"11/6",w:"五",k:"금요일",t:"首爾東側＋鐘路",i:[
 ["早餐","旅館附近早餐","food:美食",""],
 ["09:30–10:40","公車前往東大門站・興仁之門","bus:公車","約 20–35 分鐘"],
-["順遊","昌信洞玩具一條街","spot:景點","08:00–19:00，週六日公休"],
-["10:40–11:50","東大門逛街","spot:景點","東大門綜合市場（07:30–19:00，週日公休）、現代 City Outlet（10:30–21:30）、平和市場"],
-["11:50–13:10","午餐：辣炒年糕＋廣藏市場","food:美食","獵奇辣炒年糕東大門本店、廣藏市場小吃"],
-["15:15–18:30","明洞","spot:景點","明洞新世界免稅店，10:30–20:00（六日到 20:30）",1],
-["18:30–19:30","晚餐","food:美食",""]]},
+["順遊","昌信洞玩具一條街","spot:景點","",0,["昌信洞玩具一條街"]],
+["10:40–11:50","東大門逛街","spot:景點","",0,["東大門綜合市場","東大門現代百貨","平和市場"]],
+["11:50–13:10","午餐：辣炒年糕＋廣藏市場","food:美食,spot:景點","",0,["廣藏市場","獵奇辣炒年糕東大門本店","順美家幸福的醬蟹"]],
+["13:45–14:30","前往鐘路・LOL Park","rail:地鐵,spot:景點","鐘路周邊另有餐廳可順路選擇",0,["LOL Park","한사발포차 (종각점)","南山炸豬排 鐘路店"]],
+["15:15–18:30","明洞","spot:景點","",1,["明洞新世界免稅店"]],
+["18:30–19:30","晚餐：明洞","food:美食","",0,["益善洞牧場","The Spot Fabulous"]]]},
 {d:"11/7",w:"六",k:"토요일",t:"龍山半日遊＋市場美食",i:[
 ["早餐","旅館附近早餐","food:美食",""],
-["10:30–12:30","前往龍山站・I’PARK Mall","rail:地鐵","10:30–21:00",1],
-["12:30–13:30","午餐","food:美食",""],
+["10:30–12:30","前往龍山站・I’PARK Mall","rail:地鐵","",1,["I'PARK Mall"]],
+["12:30–13:30","午餐：龍山","food:美食","",0,["쭈반 아이파크몰 용산점","서용관 (Seo Yong Gwan)","용산포구"]],
 ["13:30–14:00","前往國立中央博物館","walk:步行",""],
-["14:00–16:00","國立中央博物館","spot:景點","09:30–17:30，週三與週六開到 21:00"],
-["16:00 出發","望遠市場晚餐","food:美食","17:00–18:00 停留；必吃炸雞丁、辣椒煎餅（10:00–21:00）",1]]},
+["14:00–16:00","國立中央博物館","spot:景點","",0,["國立中央博物館"]],
+["16:00 出發","望遠市場晚餐","food:美食","17:00–18:00 停留；必吃炸雞丁、辣椒煎餅",1,["望遠市場"]]]},
 {d:"11/8",w:"日",k:"일요일",t:"古宮文化＋移動日",i:[
 ["早餐","旅館附近早餐","food:美食",""],
-["08:00–09:15","弘大退房","stay:住宿","Bunk Backpackers Guesthouse，11:00 前退房"],
+["08:00–09:15","弘大退房","stay:住宿","11:00 前退房",0,["Bunk Backpackers Guesthouse"]],
 ["09:15–09:45","前往景福宮","rail:地鐵",""],
-["09:45–11:30","景福宮","spot:景點","09:00–17:00，週二公休；門票 KRW 3,000"],
-["11:45–13:00","午餐：土俗村蔘雞湯","food:美食",""],
+["09:45–11:30","景福宮","spot:景點","週二公休；門票 KRW 3,000",0,["景福宮"]],
+["11:45–13:00","午餐：景福宮附近","food:美食","",0,["土俗村蔘雞湯","大瓦房","파루 닭한마리"]],
 ["13:00–13:40","返回首爾站","rail:地鐵",""],
 ["15:45–18:03","KTX 到釜山","rail:KTX","Cheongryong 9151"],
-["19:00–19:30","海雲台入住","stay:住宿","釜山海雲台 2 東橫 INN，15:00 起可入住"],
-["20:30","晚餐＋T1 Base Camp（釜山）","food:美食","味贊王烤肉／Puradak 炸雞／60 雞三選一；T1 Base Camp 全天開放",1]]},
+["19:00–19:30","海雲台入住","stay:住宿","15:00 起可入住",0,["釜山海雲台2東橫酒店"]],
+["20:30","晚餐＋T1 Base Camp（釜山）","food:美食,spot:景點","T1 Base Camp 全天開放",1,["T1 Base Camp (Busan)","味贊王烤肉","Puradak炸雞","60雞","益善洞牧場"]]]},
 {d:"11/9",w:"一",k:"월요일",t:"海雲台多重海景",i:[
-["早餐","旅館附近早餐","food:美食",""],
-["10:00–12:30","步行至海雲台海灘・SEA LIFE","walk:步行","SEA LIFE Busan Aquarium，10:00–19:00（六日到 20:00），門票 KRW 32,000"],
-["13:00–14:30","海雲台商圈午餐","food:美食","31cm 海鮮刀削麵／密陽血腸豬肉湯飯，順逛海雲台傳統市場（09:00–22:00）"],
-["14:30–16:00","海岸散步","walk:步行","冬柏島海岸步道、APEC 世峰樓（09:00–17:00）"],
-["17:00–18:30","The Bay 101 夜景","spot:景點","08:00–23:00，可到 The Bay 101: Fingers & Chat 用餐",1]]},
+["早餐","飯店早餐","food:美食",""],
+["10:00–12:30","步行至海雲台海灘・SEA LIFE","walk:步行,spot:景點","門票 KRW 32,000",0,["SEA LIFE Busan Aquarium"]],
+["13:00–14:30","海雲台商圈午餐","food:美食,spot:景點","順逛海雲台傳統市場",0,["海雲台傳統市場","31cm海鮮刀削麵","密陽血腸豬肉湯飯"]],
+["14:30–16:00","海岸散步","walk:步行,spot:景點","",0,["冬柏島海岸步道","APEC世峰樓"]],
+["17:00–18:30","The Bay 101 夜景","spot:景點,food:美食","",1,["The Bay 101","The Bay 101: Fingers & Chat","巨大牛肉湯飯"]]]},
 {d:"11/10",w:"二",k:"화요일",t:"最後補貨・回家",i:[
-["08:30–09:00","海雲台退房","stay:住宿","10:00 前退房"],
+["08:30–09:00","海雲台退房","stay:住宿","10:00 前退房",0,["釜山海雲台2東橫酒店"]],
 ["09:00–09:50","前往西面＋寄放行李","rail:地鐵",""],
-["09:50–10:30","早午餐：Egg Drop","food:美食",""],
-["10:30–11:15","西面商圈","spot:景點","樂天百貨釜山本店（10:30 開門）"],
+["09:50–10:30","早午餐：Egg Drop","food:美食","",0,["Egg Drop"]],
+["10:30–11:15","西面商圈","spot:景點","",0,["樂天百貨釜山本店"]],
 ["11:15–11:30","取行李＋搭輕軌","rail:輕軌",""],
 ["11:30–12:30","前往金海機場","rail:輕軌",""],
 ["14:50","搭機回桃園","air:飛機","大韓航空 KE2085，16:30 抵達桃園 T1"]]}];
+const P={"T1 Base Camp (Busan)":["https://naver.me/5CCLEZ61","24 小時","a"],"SEA LIFE Busan Aquarium":["https://naver.me/FoENALrx","10:00","a"],"The Bay 101":["https://naver.me/59vo1yZU","08:00","a"],"T1 Base Camp (Seoul)":["https://maps.app.goo.gl/xDKeTtkWz6kQgyeQ8","09:00–20:00","a"],"海雲台傳統市場":["https://naver.me/xFLuqIyP","09:00","a"],"LOL Park":["https://naver.me/Fw7iu15Q","11:00","a"],"東大門綜合市場":["https://naver.me/xUw1rx2F","07:30","a"],"昌信洞玩具一條街":["https://naver.me/xv3DeaDd","08:00","a"],"I'PARK Mall":["https://naver.me/GUwSuJc5","10:30","a"],"東大門現代百貨":["https://naver.me/xDCs7SRp","10:30","a"],"廣藏市場":["https://naver.me/G7V4Bx4O","","a"],"平和市場":["https://naver.me/xMj6kxOw","","a"],"國立中央博物館":["https://naver.me/5PVEGNmF","09:30","a"],"望遠市場":["https://naver.me/5eUcpKva","10:00","a"],"景福宮":["https://naver.me/Fw7iyAYH","09:00","a"],"樂天百貨釜山本店":["https://naver.me/xZVbDc9R","10:30","a"],"明洞新世界免稅店":["https://naver.me/xJiBqlUD","10:30","a"],"AK PLAZA":["https://naver.me/56R6OZp0","11:00","a"],"APEC世峰樓":["https://naver.me/GUwSc183","09:00","a"],"冬柏島海岸步道":["https://naver.me/G1wJpdYE","","a"],"JS商店":["https://naver.me/5MVzf73R","12:00","a"],"土俗村蔘雞湯":["https://naver.me/FW6hFEuf","10:00–22:00","r"],"BBQ炸雞":["https://naver.me/5fIpat5O","00:00–06:00；10:00–00:00","r"],"獵奇辣炒年糕弘大分店":["https://naver.me/xDJu7HuW","11:10","r"],"大方排骨":["https://maps.app.goo.gl/gqpoPpX7wRDsxhJK6","12:00","r"],"31cm海鮮刀削麵":["https://naver.me/5XJI630U","10:50–14:30；16:00–21:30","r"],"密陽血腸豬肉湯飯":["https://naver.me/5T4ABsWP","24 小時","r"],"獵奇辣炒年糕東大門本店":["https://naver.me/FXwGOTGE","10:00","r"],"The Bay 101: Fingers & Chat":["https://naver.me/GJTiIBB7","14:00–24:00","r"],"Egg Drop":["https://naver.me/FN747zwP","07:00–22:00","r"],"60雞":["https://naver.me/FcmOH5pA","11:00–隔日01:00","r"],"Puradak炸雞":["https://naver.me/G1pXubxT","12:00","r"],"味贊王烤肉":["https://naver.me/GSDACPH7","11:30","r"],"益善洞牧場":["https://naver.me/xq3dpKsN","12:00–23:00","r"],"The Spot Fabulous":["https://naver.me/xucpDp5E","10:00","r"],"한사발포차 (종각점)":["https://map.naver.com/p/search/%ED%95%9C%EC%82%AC%EB%B0%9C%ED%8F%AC%EC%B0%A8%20%EC%A2%85%EA%B0%81%EC%A0%90","17:00–02:00","r"],"南山炸豬排 鐘路店":["https://naver.me/5CW7jd35","10:00–20:00","r"],"연남어부":["https://naver.me/5IS9e8TM","15:00–24:00","r"],"一片里脊 弘大本店":["https://naver.me/F0z2Qz8z","12:00–24:00","r"],"쭈반 아이파크몰 용산점":["https://naver.me/5c84kArQ","11:00–22:00","r"],"서용관 (Seo Yong Gwan)":["https://naver.me/x8tpxiNW","10:30–22:00","r"],"용산포구":["https://naver.me/xLscrTn7","11:30–23:00","r"],"香港飯店0410 (弘大店)":["https://naver.me/FRLND3kO","10:00–22:30","r"],"順美家幸福的醬蟹":["https://naver.me/xbA5Lzhh","10:30–22:00","r"],"大瓦房":["https://naver.me/FjbnoWMO","11:30–21:00","r"],"파루 닭한마리":["https://naver.me/xiLZlqKI","11:00–21:30","r"],"巨大牛肉湯飯":["https://naver.me/FIfsTBYJ","07:00–21:00","r"],"Bunk Backpackers Guesthouse":["https://naver.me/GDaHIh0q","","s"],"釜山海雲台2東橫酒店":["https://naver.me/xCBQdEWA","","s"]};
+const KIND={a:"景點",r:"餐廳",s:"住宿"};
+const PIN='<svg viewBox="0 0 20 20" width="18" height="18" fill="#fff" stroke="#3E3A39" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M10 18S4 12 4 8a6 6 0 0 1 12 0c0 4-6 10-6 10z"/><circle cx="10" cy="8" r="2"/></svg>';
+function loc(n){const p=P[n];if(!p)return "";return `<a class="loc ${p[2]}" href="${p[0]}" target="_blank" rel="noopener">${PIN}<span>${n}<small>${KIND[p[2]]}${p[1]?"・"+p[1]:""}</small></span></a>`}
 
 $("#days").innerHTML=D.map((x,n)=>`<button class="day" role="tab" aria-selected="${n==0}" data-n="${n}"><b>${x.d}</b><small>${x.w}・Day ${n+1}</small></button>`).join("");
 function show(n,anim){
@@ -284,15 +307,15 @@ function show(n,anim){
  document.querySelectorAll(".day").forEach((b,i)=>b.setAttribute("aria-selected",i==n));
  $("#dview").innerHTML=`<div class="dtitle">${x.t}<small>${x.k}</small></div><ol class="tl ${anim?"pop":""}">`+x.i.map(r=>{
   const tags=r[2].split(",").map(t=>{const [k,l]=t.split(":");return `<span class="tag ${TG[k]}">${l}</span>`}).join("");
-  return `<li class="${r[4]?"must":""}"><div class="card"><div class="t">${r[0]}</div><h3>${r[1]}${r[4]?'<span class="must-b">必去</span>':""}</h3><div class="tags">${tags}</div>${r[3]?`<p>${r[3]}</p>`:""}</div></li>`}).join("")+"</ol>";
+  return `<li class="${r[4]?"must":""}"><div class="card"><div class="t">${r[0]}</div><h3>${r[1]}${r[4]?'<span class="must-b">必去</span>':""}</h3><div class="tags">${tags}</div>${r[3]?`<p>${r[3]}</p>`:""}${r[5]?`<div class="locs">${r[5].map(loc).join("")}</div>`:""}</div></li>`}).join("")+"</ol>";
 }
 $("#days").addEventListener("click",e=>{const b=e.target.closest(".day");if(b){show(+b.dataset.n,true);b.scrollIntoView({inline:"center",block:"nearest"})}});
 show(0,false);
 
 /* 住宿 */
 const ST=[
-{n:"Bunk Backpackers Guesthouse",c:"首爾・弘大",r:[["入住","11/5（四）– 11/8（日），3 晚"],["Check-in","15:00–21:00"],["Check-out","11:00 前"],["訂房確認碼","6175337025"],["地址","11-1, Wausan-ro 29da-gil, Mapo-gu, Seoul"]],u:"https://naver.me/GDaHIh0q"},
-{n:"釜山海雲台 2 東橫 INN",c:"釜山・海雲台",r:[["入住","11/8（日）– 11/10（二），2 晚"],["Check-in","15:00 起"],["Check-out","10:00 前"],["地址","5, Haeundaehaebyeon-ro 237beon-gil, Haeundae-gu, Busan"]],u:"https://maps.app.goo.gl/ketd9s5Mpxh2nzKx7"}];
+{n:"Bunk Backpackers Guesthouse",c:"首爾・弘大",r:[["入住","11/5（四）– 11/8（日），3 晚"],["Check-in","15:00–21:00"],["Check-out","11:00 前"],["訂房確認碼","6175337025"],["地址","11-1, Wausan-ro 29da-gil, Mapo-gu, 麻浦區, 04053 首爾, 韓國"]],u:"https://naver.me/GDaHIh0q"},
+{n:"釜山海雲台 2 東橫 INN",c:"釜山・海雲台",r:[["入住","11/8（日）– 11/10（二），2 晚"],["Check-in","15:00 起"],["Check-out","10:00 前"],["地址","5, Haeundaehaebyeon-ro 237beon-gil, Haeundae-gu, 48093 釜山, 韓國"]],u:"https://naver.me/xCBQdEWA"}];
 $("#staybox").innerHTML=ST.map(s=>`<article class="card"><span class="pill">${s.c}</span><h3 style="margin-top:8px">${s.n}</h3>${s.r.map(r=>`<div class="row"><span>${r[0]}　</span>${r[1]}</div>`).join("")}<a class="btn" href="${s.u}" target="_blank" rel="noopener">開啟地圖</a></article>`).join("");
 
 /* 可打勾清單 */
@@ -305,16 +328,27 @@ function count(id,total){
  const c=[...document.querySelectorAll(`[data-k^="kr:${id}"]`)].filter(i=>i.checked).length;
  $("#c-"+id).textContent=`${c} / ${total}`;
 }
-const TODO=[["訂機票"],["訂住宿"],["規劃行程"],["預約餐廳與景點"],["預約租車"],["購買 eSIM"],["打包衣服"]];
+const TODO=[["訂機票"],["訂住宿"],["規劃行程"],["預約餐廳與景點"],["預約租車"],["購買 eSIM"],["打包衣服"],["保險"]];
 [0,1,2,3,4].forEach(n=>ls.g("kr:todo:"+n)===null&&ls.s("kr:todo:"+n,"1"));
 checklist("todo",TODO);
-const SHOP={"超商":["CU mochi roll cake","CU 杜拜巧克力","SUN 餅乾","To Go 優格","YOZM 優格（藍莓果醬／蘋果肉桂）"],"超市":["Bbibigo 海苔餅乾","NeRds 福壽螺軟糖","ZERO 巧克力派"],"飲料":["Compose 荔枝海鹽","Mammoth 草莓拿鐵","白種元 甜米釀"],"Olive Young":["FIXX 粉罐","Innisfree 蜜粉","年糕洗面"],"Daiso":["PDRN","PURE 棉棉","好寫三色筆","海葡萄棉片","蘋果奶茶"],"藥局":["Dr. Reju-ALL","痠痛乳液"]};let stotal=0;
-$("#shopbox").innerHTML=Object.entries(SHOP).map(([g,a],gi)=>{stotal+=a.length;return `<div><span class="gh ${["c","y","b","g"][gi%4]}">${g}</span><ul class="ck">${a.map((t,n)=>{const k=`kr:shop:${gi}-${n}`;return `<li><label><input type="checkbox" data-k="${k}" ${ls.g(k)=="1"?"checked":""}><span class="bx"></span><span class="tx">${t}</span></label></li>`}).join("")}</ul></div>`}).join("");
+const SHOP={"超商":["SUN 餅乾","CU 杜拜巧克力","YOZM 優格（藍莓果醬／蘋果肉桂）","To Go 優格","CU mochi roll cake"],"超市":["Bbibigo 海苔餅乾","ZERO 巧克力派","NeRds 福壽螺軟糖"],"飲料":["Compose 荔枝海鹽","白種元 甜米釀","Mammoth 草莓拿鐵"],"Olive Young":["FIXX 粉罐","Innisfree 蜜粉","年糕洗面"],"Daiso":["好寫三色筆","PURE 棉棉","蘋果奶茶","VT PDRN","海葡萄棉片"],"藥局":["痠痛乳液","Dr. Reju-ALL","痘痘藥膏"]};
+const PACK={"衣物":["毛衣","襯衫","外套","長褲","內衣褲","襪子","帽子","睡衣"],"必備物品":["護照","身分證","信用卡","現金","交通卡（IC card）","鑰匙","行李秤","洗衣袋","筆（填入境卡）","髮圈","口罩"],"盥洗保養":["保養品","化妝品","洗髮精","肥皂","防曬乳","防蚊液","牙刷","牙膏","護唇膏","指甲剪","梳子","衛生紙"],"3C 用品":["手機","手機充電器","充電線","行動電源","轉接頭"],"藥品":["急救包","感冒藥","腸胃藥","眼藥水"]};
+function group(box,obj,id){let t=0;box.innerHTML=Object.entries(obj).map(([g,a],gi)=>{t+=a.length;return `<div><span class="gh ${["c","y","b","g"][gi%4]}">${g}</span><ul class="ck">${a.map(x=>{const k=`kr:${id}:${x}`;return `<li><label><input type="checkbox" data-k="${k}" ${ls.g(k)=="1"?"checked":""}><span class="bx"></span><span class="tx">${x}</span></label></li>`}).join("")}</ul></div>`}).join("");return t}
+const stotal=group($("#shopbox"),SHOP,"shop"),ptotal=group($("#packbox"),PACK,"pack");
 
-const PACK={"證件與錢":["護照","身分證","信用卡","現金","交通卡（IC card）","SIM 卡 / eSIM"],"3C 用品":["手機充電器","充電線","行動電源","轉接頭","相機"],"衣物":["外套","毛衣","套頭衫","襯衫","長褲","內衣褲","襪子","睡衣","帽子"],"盥洗保養":["牙刷","牙膏","洗髮精","肥皂","體香劑","梳子","髮圈","指甲剪","護唇膏","防曬乳","保養品","化妝品"],"藥品":["感冒藥","腸胃藥","眼藥水","急救包","防蚊液"],"其他":["口罩","衛生紙","鑰匙","筆（填入境卡）","行李秤","洗衣袋"]};
-const gc=["c","y","b","g"];let pn=0,ptotal=0;
-$("#packbox").innerHTML=Object.entries(PACK).map(([g,a],gi)=>{ptotal+=a.length;return `<div><span class="gh ${gc[gi%4]}">${g}</span><ul class="ck" data-g="${gi}"></ul></div>`}).join("");
-Object.values(PACK).forEach((a,gi)=>{const ul=document.querySelector(`[data-g="${gi}"]`);ul.innerHTML=a.map((t,n)=>{const k=`kr:pack:${gi}-${n}`;return `<li><label><input type="checkbox" data-k="${k}" ${ls.g(k)=="1"?"checked":""}><span class="bx"></span><span class="tx">${t}</span></label></li>`}).join("")});
+/* 餐廳 */
+const RS=[["土俗村蔘雞湯","湯類",["首爾站"]],["BBQ炸雞","炸物",["弘大"]],["獵奇辣炒年糕弘大分店","小吃",["弘大"]],["大方排骨","烤肉",["弘大"]],["31cm海鮮刀削麵","麵食",["海雲台"]],["密陽血腸豬肉湯飯","湯類",["海雲台"]],["獵奇辣炒年糕東大門本店","小吃",["東大門"]],["The Bay 101: Fingers & Chat","美式/西式",["海雲台"]],["Egg Drop","美式/西式",["海雲台"]],["60雞","炸物",["海雲台"]],["Puradak炸雞","炸物",["海雲台"]],["味贊王烤肉","烤肉",["海雲台"]],["益善洞牧場","烤肉",["明洞"]],["The Spot Fabulous","甜點咖啡",["明洞"]],["한사발포차 (종각점)","麵食",["鐘路","弘大"]],["南山炸豬排 鐘路店","炸物",["鐘路"]],["연남어부","生食/海鮮",["弘大"]],["一片里脊 弘大本店","烤肉",["弘大"]],["쭈반 아이파크몰 용산점","生食/海鮮",["龍山"]],["서용관 (Seo Yong Gwan)","湯類",["龍山"]],["용산포구","生食/海鮮",["龍山"]],["香港飯店0410 (弘大店)","麵食",["弘大"]],["順美家幸福的醬蟹","生食/海鮮",["東大門"]],["大瓦房","生食/海鮮",["首爾站"]],["파루 닭한마리","生食/海鮮",["首爾站"]],["巨大牛肉湯飯","湯類",["海雲台"]]];
+const TC={"湯類":"b","炸物":"y","小吃":"c","烤肉":"c","麵食":"g","美式/西式":"w","甜點咖啡":"b","生食/海鮮":"g"};
+const RG=["全部","弘大","東大門","明洞","鐘路","龍山","首爾站","海雲台"];
+const rdays=n=>D.map((x,k)=>x.i.some(r=>r[5]&&r[5].includes(n))?k+1:0).filter(Boolean);
+$("#rf").innerHTML=RG.map((g,n)=>`<button class="day fc" role="tab" aria-selected="${n==0}" data-g="${g}">${g}</button>`).join("");
+function rshow(g){
+ document.querySelectorAll("#rf .day").forEach(b=>b.setAttribute("aria-selected",b.dataset.g==g));
+ $("#rlist").innerHTML=RS.filter(r=>g=="全部"||r[2].includes(g)).map(r=>{const p=P[r[0]],d=rdays(r[0]);
+  return `<article class="card rc"><div><h3>${r[0]}</h3><div class="tags"><span class="tag ${TC[r[1]]||"w"}">${r[1]}</span>${r[2].map(x=>`<span class="tag w">${x}</span>`).join("")}</div>${p[1]?`<div class="rm">營業 ${p[1]}</div>`:""}${d.length?`<div class="rm">行程：${d.map(x=>"Day "+x).join("、")}</div>`:""}</div><a class="btn" href="${p[0]}" target="_blank" rel="noopener">地圖</a></article>`}).join("");
+}
+$("#rf").addEventListener("click",e=>{const b=e.target.closest(".day");if(b){rshow(b.dataset.g);b.scrollIntoView({inline:"center",block:"nearest"})}});
+rshow("全部");
 const upd=()=>{count("todo",TODO.length);count("shop",stotal);count("pack",ptotal)};
 document.addEventListener("change",e=>{const k=e.target.dataset&&e.target.dataset.k;if(k){ls.s(k,e.target.checked?"1":"0");upd()}});
 upd();
